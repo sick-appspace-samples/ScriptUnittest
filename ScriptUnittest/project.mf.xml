@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest>
     <application name="ScriptUnittest">
         <crown name="ScriptUnittest">
@@ -6,24 +6,18 @@
             <serves>
                 <function name="runUnittest">
                     <desc>Runs all unittests of this app and returns pass or fail</desc>
-                    <return name="appName" type="string" desc="Name of the App which contains the unittest"/>
-                    <return name="result" type="bool" desc="Test result, true if all unittests are passed"/>
-                    <return name="failPath" type="string" multiplicity="?" desc="Path to failed test"/>
+                    <return desc="Name of the App which contains the unittest" name="appName" type="string"/>
+                    <return desc="Test result, true if all unittests are passed" name="result" type="bool"/>
+                    <return desc="Path to failed test" multiplicity="?" name="failPath" type="string"/>
                 </function>
             </serves>
         </crown>
         <meta key="author">AppSpace Sample</meta>
         <meta key="version">2.5.0</meta>
-        <meta key="licensed">false</meta>
         <meta key="priority">low</meta>
         <meta key="copy-protected">false</meta>
         <meta key="read-protected">false</meta>
         <meta key="tags">Testing</meta>
-        <entry path="scripts" default="main.lua">
-            <file type="text/x-lua">modules/submoduleA.lua</file>
-            <file type="text/x-lua">modules/submoduleB.lua</file>
-            <file type="text/x-lua">main.lua</file>
-            <file type="text/x-lua">unittest.lua</file>
-        </entry>
+        <entry default="main.lua" path="scripts"/>
     </application>
 </manifest>
