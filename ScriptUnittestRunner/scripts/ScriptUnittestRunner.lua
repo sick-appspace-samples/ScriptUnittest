@@ -1,27 +1,4 @@
---[[----------------------------------------------------------------------------
 
-  Application Name:
-  ScriptUnittestRunner
-
-  Summary:
-  Running the defined unittests
-
-  Description:
-  This app is part of the ScriptUnittest sample. It triggers the runUnittest function
-  from the ScriptUnittest App. This sample can also be used to trigger unittests from
-  multiple apps
-
-  How to run:
-  To show this sample it is also required to run both, this App and the ScriptUnittest App.
-  Clicking the "Start Unittest" button on the user interface prints the according message
-  to the console.
-
-  Implementation:
-  To add unittests from other apps, their according CROWN can be added to the tests table.
-  All unittests are then run, but each test is stopped when the test fails.
-  In order to work, the served function must follow the Syntax CROWNname.runUnittest
-
-------------------------------------------------------------------------------]]
 --Start of Global Scope---------------------------------------------------------
 
 

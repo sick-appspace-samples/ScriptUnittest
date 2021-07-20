@@ -1,18 +1,25 @@
 ## ScriptUnittest
-Showing basic option for unittesting scripts
+Basic introduction to unit testing.
+
 ### Description
 This sample shows an approach to unittest script functions. 
-It has two exemplary modules and this 'main' script. The actual unittest functionality 
+It has two exemplary modules and a 'main' script. The actual unittest functionality 
 is found in the script Unittest. The two exemplary modules containing a function and 
 their according test function. The test function is then added to the unittest. 
 The whole unittest runs after calling the rununittest function. 
 The test stops at the position where it failed and returns the failing path in that case.
+
 ### How to Run
 The sample can be run on the emulator. The tests are triggered from another App. 
-Therefore both this App and 'ScriptUnittestRunner' have to be running on the device.
+Therefore both this App ('ScriptUnittest') and the app 'ScriptUnittestRunner' have to be running on simultaneously.
 The 'ScriptUnittestRunner' comes with a user interface where the unittest(s) 
 can be started with a button click. The results are printed to the console.
+
 ### Implementation
+To add unittests from other apps, their according CROWN can be added to the tests table.
+All unittests are then run, but each test is stopped when the test fails.
+In order to work, the served function must follow the Syntax 'CROWN_NAME.runUnittest'
+
 To embed in other applications,
 1. Copy the unittest.lua into the application to test
 2. Require the unittest.lua in the scripts which should be tested (or in parent)
