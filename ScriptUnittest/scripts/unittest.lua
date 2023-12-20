@@ -14,12 +14,12 @@ local unittest = {
 
 --Start of Function and Event Scope---------------------------------------------
 
- -- Adding test function
+---Adding test function
 function unittest.addTest(testPath, testFunction)
   table.insert(unittest.tests, {path = testPath, func = testFunction})
 end
 
--- Running all unittests sequencially. The function stopps if one test fails
+---Running all unittests sequencially. The function stopps if one test fails
 local function runUnittest()
   local bSuccess = false
   local sFailedPath = ""

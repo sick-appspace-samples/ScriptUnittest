@@ -12,9 +12,9 @@ local tests = {ScriptUnittest} --luacheck: ignore
 
 --Start of Function and Event Scope---------------------------------------------
 
--- Function is triggered from UI
--- all 'runUnittest' functions from the specified CROWNs in tests are run.
--- each test stops at the failing function.
+---Function is triggered from UI
+---all 'runUnittest' functions from the specified CROWNs in tests are run.
+---each test stops at the failing function.
 local function runTests()
   for i = 1, #tests do
     local appName, result, failPath = tests[i].runUnittest()

@@ -9,7 +9,7 @@ local moduleB = require "modules/submoduleB"
 
 --Start of Function and Event Scope---------------------------------------------
 
---Declaration of the 'main' function as an entry point for the event loop
+---Declaration of the 'main' function as an entry point for the event loop
 local function main()
   -- Some app calculation:
   local appResult = moduleA.myInternalFunctionA() + moduleB.myInternalFunctionB()

@@ -9,7 +9,7 @@ end
 
 -- Test ------------------------------------------------------------------------
 
--- Creating a test function
+---Creating a test function
 local function testMyInternalFunctionB()
   local bPass = (myInternalFunctionB() == 40)
   return bPass
